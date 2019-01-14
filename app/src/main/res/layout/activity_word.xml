@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="vn.manroid.activity.WordActivity">
+
+   <TextView
+       android:gravity="center_horizontal"
+       android:textSize="50sp"
+       android:text="Hello"
+       android:textColor="@color/matrix"
+       android:id="@+id/txt_head"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true" />
+    <!-- //////////////////////////////////////////// -->
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/btn_uk"
+        android:src="@drawable/megaphone"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:textColor="@color/matrix"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:layout_alignBottom="@id/btn_uk"
+        android:layout_toLeftOf="@id/btn_uk"
+        android:text="U.K"
+        android:id="@+id/txt_uk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/megaphone"
+        android:id="@+id/btn_us"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txt_head"
+        android:layout_toLeftOf="@+id/txt_uk" />
+    <TextView
+        android:textColor="@color/matrix"
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@id/btn_us"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/btn_us"
+        android:textSize="20sp"
+        android:text="U.S"
+        android:id="@+id/txt_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btn_us"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/matrix"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            android:id="@+id/txt_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:textSize="20sp" />
+        
+    </ScrollView>
+    
+    
+</RelativeLayout>

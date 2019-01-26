@@ -20,7 +20,7 @@
         android:layout_below="@+id/img_book"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
-        android:text="Từ điển Việt Anh"
+        android:text="Từ điển Anh - Việt"
         android:textColor="@color/matrix"
         android:textSize="34sp" />
 

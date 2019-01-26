@@ -2,38 +2,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#696969"
     android:orientation="vertical"
     android:weightSum="1"
-    android:background="#696969"
     tools:context="vn.manroid.activity.DictionaryActivity">
 
     <!-- TODO: Update blank fragment layout -->
 
-        <ImageView
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right"
+        android:src="@drawable/close"
+        android:visibility="gone" />
 
-            android:src="@drawable/close"
-            android:layout_gravity="right"
-            android:id="@+id/btn_close"
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:text="Từ điển Anh - Việt"
+        android:textColor="@color/matrix"
+        android:textSize="30dp"
+        android:typeface="serif" />
 
-        <TextView
-            android:typeface="serif"
-            android:textColor="@color/matrix"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="Từ điển Anh - Việt"
-            android:textSize="30dp" />
-
-        <vn.manroid.custom.CustomView
-            android:src="@drawable/ava_info"
-            android:layout_gravity="center"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ava_info" />
 
     <TextView
 
@@ -74,16 +73,16 @@
 
     <com.romainpiel.shimmer.ShimmerTextView
         android:id="@+id/txt_head"
-        android:layout_marginTop="50dp"
-        android:layout_weight="0.1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0.1"
         android:text="Manroid"
-        android:typeface="normal"
         android:textColor="@color/matrix"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:typeface="normal" />
 </LinearLayout>
